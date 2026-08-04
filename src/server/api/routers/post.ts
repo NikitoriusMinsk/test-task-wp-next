@@ -1,5 +1,7 @@
+import { gql } from "@apollo/client";
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
+import { query } from "~/server/utils/ApolloClient";
 
 // Mocked DB
 interface Post {
@@ -18,7 +20,20 @@ export const postRouter = createTRPCRouter({
     .input(z.object({ count: z.number() }))
     .query(({ input }) => {
       const { count } = input;
-
-      return {};
+      return query({
+        query: gql`
+          query postsQuery {
+            posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
+              edges {
+                node {
+                  title
+                  excerpt
+                  slug
+                }
+              }
+            }
+          }
+        `,
+      });
     }),
 });

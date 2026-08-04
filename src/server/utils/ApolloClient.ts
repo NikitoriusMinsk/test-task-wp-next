@@ -4,13 +4,14 @@ import {
   ApolloClient,
   InMemoryCache,
 } from "@apollo/client-integration-nextjs";
+import { env } from "~/env";
 
 export const { getClient, query, PreloadQuery } = registerApolloClient(() => {
   return new ApolloClient({
     cache: new InMemoryCache(),
     link: new HttpLink({
       // Use an absolute URL for SSR (relative URLs cannot be used in SSR)
-      uri: "https://your-api.com/graphql",
+      uri: env.WORDPRESS_GRAPHQL_API_URL,
       fetchOptions: {
         // Optional: Next.js-specific fetch options for caching and revalidation
         // See: https://nextjs.org/docs/app/api-reference/functions/fetch
