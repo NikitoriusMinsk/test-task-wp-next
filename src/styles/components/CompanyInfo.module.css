@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 15px 156px;
+}
+
+.messengers {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+/* Contact component styles */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.heading {
+  color: #33333380;
+}
+
+.header .container:first-of-type .textContainer .heading {
+  color: inherit;
+}

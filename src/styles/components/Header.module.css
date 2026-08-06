@@ -1,0 +1,44 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 15px 156px;
+  background-color: #1a1919;
+}
+
+.catalogue {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navItem {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button {
+  padding: 15px 30px;
+  border-radius: 100px;
+  background-color: #f8ad1f;
+  border: none;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
