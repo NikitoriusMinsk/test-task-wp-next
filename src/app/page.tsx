@@ -14,6 +14,7 @@ export default async function Home() {
         <CompanyInfo />
         <Header />
         <Hero />
+        <div className={styles.wrapper}></div>
       </main>
     </HydrateClient>
   );
