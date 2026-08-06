@@ -1,0 +1,181 @@
+.hero {
+  height: 760px;
+  position: relative;
+  display: flex;
+  padding: 155px 155px 15px 155px;
+}
+
+.heroImage {
+  z-index: -1;
+}
+
+.heroImage::after {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #090909, #09090948);
+}
+
+.heroContent {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.heroContent > div {
+  flex: 1;
+}
+
+/* Hero Left Side*/
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroLeft h3 {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #f8ad1f;
+}
+
+.heroLeft h1 {
+  font-family: Helvetica;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-top: 13px;
+}
+
+.heroLeft p {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-top: 10px;
+  text-shadow: 0px 4px 4px 0px #00000082;
+}
+
+.heroLeft .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 55px;
+}
+
+.buttons > button {
+  padding: 15px 30px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: #f8ad1f;
+  color: #ffffff;
+}
+
+.buttons > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  opacity: 0.8;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.buttons > div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: transparent;
+  height: 34px;
+  width: 34px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/* Hero Right Side*/
+.heroRight {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.heroRight .block {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex: 1;
+  border-radius: 40px;
+  padding: 30px 20px;
+  border: 1px solid #ffffff66;
+}
+
+.heroRight .block h3 {
+  font-family: Helvetica;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.heroRight .block p {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.heroRight .dots {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 86px;
+  margin-left: -25px;
+}
+
+.heroRight .dots div {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+}
+
+.heroRight .dots div.active {
+  border-color: #f8ad1f;
+  background-color: #f8ad1f;
+}
