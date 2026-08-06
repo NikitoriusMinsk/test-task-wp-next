@@ -23,7 +23,7 @@ export default function Hero() {
             <div>
               <span>узнать стоимость</span>
               <button>
-                <Image src={"/Hero/arrow.svg"} height={16} width={16} alt="" />
+                <Image src={"/arrow.svg"} height={16} width={16} alt="" />
               </button>
             </div>
           </div>

@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import CompanyInfo from "./_components/CompanyInfo";
 import Header from "./_components/Header";
 import Hero from "./_components/Hero";
+import Vehicles from "./_components/Vehicles";
 
 export default async function Home() {
   return (
@@ -14,7 +15,9 @@ export default async function Home() {
         <CompanyInfo />
         <Header />
         <Hero />
-        <div className={styles.wrapper}></div>
+        <div className={styles.wrapper}>
+          <Vehicles />
+        </div>
       </main>
     </HydrateClient>
   );
