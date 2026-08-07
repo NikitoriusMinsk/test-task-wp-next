@@ -5,7 +5,12 @@ export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.heroImage}>
-        <Image src={"/hero/hero1.png"} fill alt="Hero" objectFit={"cover"} />
+        <Image
+          src={"/hero/hero1.png"}
+          fill
+          alt="Hero"
+          style={{ objectFit: "cover" }}
+        />
       </div>
       <div className={styles.heroContent}>
         <div className={styles.heroLeft}>

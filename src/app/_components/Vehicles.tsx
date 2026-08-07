@@ -41,7 +41,13 @@ function SliderElement(props: SliderElementProps) {
   return (
     <div className={styles.sliderElement}>
       <div className={styles.image}>
-        <Image src={image} alt={title} fill objectFit="cover" />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          style={{ objectFit: "cover" }}
+          sizes="auto"
+        />
       </div>
       <div className={styles.info}>
         <h3>{title}</h3>
