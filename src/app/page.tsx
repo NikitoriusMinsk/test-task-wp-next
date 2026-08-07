@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { api, HydrateClient } from "~/trpc/server";
 import styles from "./index.module.css";
 import type { ReactNode } from "react";
 import CompanyInfo from "./_components/CompanyInfo";
@@ -10,15 +9,13 @@ import Vehicles from "./_components/Vehicles";
 
 export default async function Home() {
   return (
-    <HydrateClient>
-      <main className={styles.main}>
-        <CompanyInfo />
-        <Header />
-        <Hero />
-        <div className={styles.wrapper}>
-          <Vehicles />
-        </div>
-      </main>
-    </HydrateClient>
+    <main className={styles.main}>
+      <CompanyInfo />
+      <Header />
+      <Hero />
+      <div className={styles.wrapper}>
+        <Vehicles />
+      </div>
+    </main>
   );
 }

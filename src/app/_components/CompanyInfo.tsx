@@ -11,7 +11,7 @@ export default function CompanyInfo() {
         height={43}
       />
       <Contact
-        image="/location.svg"
+        image="/CompanyInfo/location.svg"
         heading="Санкт-Петербург"
         text="пр-кт Индустриальный, 44/2 лит а, оф. 527"
       />
