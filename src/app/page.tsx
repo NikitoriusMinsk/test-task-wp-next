@@ -7,6 +7,7 @@ import Header from "./_components/Header";
 import Hero from "./_components/Hero";
 import Vehicles from "./_components/Vehicles";
 import AboutCompany from "./_components/AboutCompany";
+import Certification from "./_components/Certification";
 
 export default async function Home() {
   return (
@@ -17,6 +18,7 @@ export default async function Home() {
       <div className={styles.wrapper}>
         <Vehicles />
         <AboutCompany />
+        <Certification />
       </div>
     </main>
   );

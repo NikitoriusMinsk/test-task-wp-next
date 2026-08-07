@@ -1,0 +1,112 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+.background {
+  z-index: -1;
+  position: absolute;
+  background-color: #f8ad1f;
+  width: calc(100% + 110px);
+  height: 350px;
+  left: -156px;
+}
+
+.text {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text h2 {
+  font-family: Helvetica;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.text p {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.slider {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.slider .controls {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 54px;
+}
+
+.slider .controls button {
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  height: 50px;
+  width: 50px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slider .controls button.active {
+  opacity: 1;
+}
+.slider .controls button:first-of-type {
+  rotate: 180deg;
+}
+
+.slider .sliderContent {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.slider .slide {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 54px;
+  margin-left: -20px;
+}
+
+.dots div {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  border: 1px solid #333333;
+}
+
+.dots div.active {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  border: 1px solid #f8ad1f;
+  background-color: #f8ad1f;
+}
