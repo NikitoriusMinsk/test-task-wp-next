@@ -15,10 +15,10 @@ export default function Vehicles() {
       </div>
       <div className={styles.controls}>
         <button>
-          <Image src={"/arrowDark.svg"} height={23} width={23} alt="" />
+          <Image src={"/arrowDark.svg"} height={25} width={25} alt="" />
         </button>
         <button className={styles.active}>
-          <Image src={"/arrowDark.svg"} height={23} width={23} alt="" />
+          <Image src={"/arrowDark.svg"} height={25} width={25} alt="" />
         </button>
       </div>
       <div className={styles.dots}>

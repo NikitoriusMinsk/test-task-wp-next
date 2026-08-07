@@ -10,6 +10,7 @@ export default function Hero() {
           fill
           alt="Hero"
           style={{ objectFit: "cover" }}
+          loading="eager"
         />
       </div>
       <div className={styles.heroContent}>

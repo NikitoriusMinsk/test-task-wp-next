@@ -5,4 +5,7 @@
 
 .wrapper {
   padding: 80px 156px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }

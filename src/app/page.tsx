@@ -6,6 +6,7 @@ import CompanyInfo from "./_components/CompanyInfo";
 import Header from "./_components/Header";
 import Hero from "./_components/Hero";
 import Vehicles from "./_components/Vehicles";
+import AboutCompany from "./_components/AboutCompany";
 
 export default async function Home() {
   return (
@@ -15,6 +16,7 @@ export default async function Home() {
       <Hero />
       <div className={styles.wrapper}>
         <Vehicles />
+        <AboutCompany />
       </div>
     </main>
   );
